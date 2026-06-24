@@ -1,0 +1,138 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Brain / Mind Icons -->
+    <symbol id="i-brain" viewBox="0 0 64 64">
+      <path d="M32 12c-4 0-7 2-9 5-2-1-5-1-7 1-3 2-4 6-2 9-2 2-3 5-2 8 1 4 5 6 9 5 1 3 4 5 7 5h4v-32h-0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M32 12c4 0 7 2 9 5 2-1 5-1 7 1 3 2 4 6 2 9 2 2 3 5 2 8-1 4-5 6-9 5-1 3-4 5-7 5h-4v-32z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M22 22c2-2 4-2 6 0M22 30c2-2 4-2 6 0M22 38c2-2 4-2 6 0M42 22c-2-2-4-2-6 0M42 30c-2-2-4-2-6 0M42 38c-2-2-4-2-6 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Memory / Anchor -->
+    <symbol id="i-anchor" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="4" fill="currentColor"/>
+      <path d="M32 12v8M32 44v8M12 32h8M44 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Eye / Perception -->
+    <symbol id="i-eye" viewBox="0 0 64 64">
+      <path d="M8 32c8-12 16-18 24-18s16 6 24 18c-8 12-16 18-24 18s-16-6-24-18z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="3" fill="currentColor"/>
+    </symbol>
+
+    <!-- Heart / Motivation -->
+    <symbol id="i-heart" viewBox="0 0 64 64">
+      <path d="M32 52s-20-12-20-26c0-7 6-12 12-12 4 0 7 2 8 5 1-3 4-5 8-5 6 0 12 5 12 12 0 14-20 26-20 26z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M22 26c2 2 4 2 6 0M36 26c2 2 4 2 6 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Scale / Judgment -->
+    <symbol id="i-scale" viewBox="0 0 64 64">
+      <path d="M32 10v44M16 54h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M14 22h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M14 22l-6 12c0 3 3 6 6 6s6-3 6-6l-6-12zM50 22l-6 12c0 3 3 6 6 6s6-3 6-6l-6-12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- People / Social -->
+    <symbol id="i-people" viewBox="0 0 64 64">
+      <circle cx="20" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="44" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M8 50c0-8 5-14 12-14s12 6 12 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M32 50c0-8 5-14 12-14s12 6 12 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Puzzle / Attachment -->
+    <symbol id="i-puzzle" viewBox="0 0 64 64">
+      <path d="M14 14h14v8c0 2 2 4 4 4s4-2 4-4v-8h14v14h-8c-2 0-4 2-4 4s2 4 4 4h8v14h-14v-8c0-2-2-4-4-4s-4 2-4 4v8h-14v-14h8c2 0 4-2 4-4s-2-4-4-4h-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Globe / Cultural -->
+    <symbol id="i-globe" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+      <ellipse cx="32" cy="32" rx="20" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <ellipse cx="32" cy="32" rx="8" ry="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 32h40" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+
+    <!-- Heartbeat / Stress -->
+    <symbol id="i-heartbeat" viewBox="0 0 64 64">
+      <path d="M6 32h12l4-10 6 20 4-14 4 8h22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Star / Self -->
+    <symbol id="i-star" viewBox="0 0 64 64">
+      <path d="M32 8l8 16 18 2-13 13 3 18-16-8-16 8 3-18-13-13 18-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Lightning / Decision -->
+    <symbol id="i-lightning" viewBox="0 0 64 64">
+      <path d="M36 6L18 34h12L24 58l18-28h-12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Funnel -->
+    <symbol id="i-funnel" viewBox="0 0 64 64">
+      <path d="M10 14h44l-16 22v14l-12-6v-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Refresh / Loop -->
+    <symbol id="i-loop" viewBox="0 0 64 64">
+      <path d="M52 24a20 20 0 1 0 4 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M52 8v16h-16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Up arrow / Growth -->
+    <symbol id="i-up" viewBox="0 0 64 64">
+      <path d="M32 50V14M32 14l-14 14M32 14l14 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Up-right arrow / Delta -->
+    <symbol id="i-delta" viewBox="0 0 64 64">
+      <path d="M10 50L50 14M50 14h-20M50 14v20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Check / Confirmation -->
+    <symbol id="i-check" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M22 32l8 8 14-14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Question / Insight -->
+    <symbol id="i-question" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M24 24c0-4 4-8 8-8s8 4 8 8c0 6-8 6-8 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="32" cy="46" r="2" fill="currentColor"/>
+    </symbol>
+
+    <!-- Layers / Nurture -->
+    <symbol id="i-layers" viewBox="0 0 64 64">
+      <path d="M32 8l24 12-24 12-24-12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M8 28l24 12 24-12M8 40l24 12 24-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Target / Routing -->
+    <symbol id="i-target" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="32" r="2" fill="currentColor"/>
+    </symbol>
+
+    <!-- Lock / Trust -->
+    <symbol id="i-lock" viewBox="0 0 64 64">
+      <rect x="14" y="26" width="36" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M22 26v-6c0-6 4-10 10-10s10 4 10 10v6" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="32" cy="40" r="3" fill="currentColor"/>
+    </symbol>
+
+    <!-- Chevron Right -->
+    <symbol id="i-arrow-right" viewBox="0 0 24 24">
+      <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Plus -->
+    <symbol id="i-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
