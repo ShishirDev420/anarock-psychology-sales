@@ -73,7 +73,7 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' })
   revealEls.forEach(function (el, i) {
     el.classList.add('reveal')
-    el.style.transitionDelay = (i % 8) * 60 + 'ms'
+    el.style.transitionDelay = (i % 4) * 80 + 'ms'
     revealObserver.observe(el)
   })
 
@@ -84,7 +84,7 @@
     var highlight = document.createElement('div')
     highlight.style.cssText =
       'position:absolute;inset:0;pointer-events:none;z-index:1;border-radius:inherit;' +
-      'background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,0.07),transparent 75%);' +
+      'background:radial-gradient(200px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,0.08),transparent 75%);' +
       'opacity:0;transition:opacity 0.4s ease;'
     card.appendChild(highlight)
     card.addEventListener('mousemove', function (e) {
