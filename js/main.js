@@ -13,8 +13,8 @@
         entry.target.classList.add('visible')
       }
     })
-  }, { threshold: 0.12, rootMargin: '40px 0px 40px 0px' })
-
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+  
   document.querySelectorAll('.reveal').forEach(function (el) {
     revealObserver.observe(el)
   })
@@ -71,8 +71,8 @@
             rotateY: 0,
             scale: 1,
             y: 0,
-            duration: 0.8,
-            ease: 'elastic.out(1, 0.85)',
+            duration: 0.7,
+            ease: 'power3.out',
             overwrite: 'auto'
           })
         }
@@ -156,11 +156,12 @@
         })
       }
 
-      // Orbital rings: individual rotateX/rotateY multipliers
+      // Orbital rings: individual rotateX/rotateY multipliers (match reference)
       if (orbitalOne) {
         gsap.to(orbitalOne, {
           x: glowDX * 0.5,
           y: glowDY * 0.5,
+          z: -200,
           rotateX: 65 + tiltX * 0.35,
           rotateY: 15 + tiltY * 0.35,
           duration: 0.95,
@@ -172,8 +173,9 @@
         gsap.to(orbitalTwo, {
           x: glowDX * 0.5,
           y: glowDY * 0.5,
-          rotateX: -40 + tiltX * 0.35,
-          rotateY: -20 + tiltY * 0.35,
+          z: -200,
+          rotateX: -40 + tiltX * 0.25,
+          rotateY: -20 + tiltY * 0.25,
           duration: 0.95,
           ease: 'power2.out',
           overwrite: 'auto'
@@ -183,8 +185,9 @@
         gsap.to(orbitalThree, {
           x: glowDX * 0.5,
           y: glowDY * 0.5,
-          rotateX: 20 + tiltX * 0.35,
-          rotateY: 40 + tiltY * 0.35,
+          z: -200,
+          rotateX: 20 + tiltX * 0.45,
+          rotateY: 40 + tiltY * 0.45,
           duration: 0.95,
           ease: 'power2.out',
           overwrite: 'auto'
@@ -219,19 +222,19 @@
       }
       if (orbitalOne) {
         gsap.to(orbitalOne, {
-          x: 0, y: 0, rotateX: 65, rotateY: 15,
+          x: 0, y: 0, z: -200, rotateX: 65, rotateY: 15,
           duration: 1.2, ease: 'power3.out', overwrite: 'auto'
         })
       }
       if (orbitalTwo) {
         gsap.to(orbitalTwo, {
-          x: 0, y: 0, rotateX: -40, rotateY: -20,
+          x: 0, y: 0, z: -200, rotateX: -40, rotateY: -20,
           duration: 1.2, ease: 'power3.out', overwrite: 'auto'
         })
       }
       if (orbitalThree) {
         gsap.to(orbitalThree, {
-          x: 0, y: 0, rotateX: 20, rotateY: 40,
+          x: 0, y: 0, z: -200, rotateX: 20, rotateY: 40,
           duration: 1.2, ease: 'power3.out', overwrite: 'auto'
         })
       }
@@ -277,11 +280,43 @@
       }
     })
 
-    // Logo wrapper fade+scale in
+    // Logo wrapper fade+scale in (base)
     tl.fromTo(heroLogoWrapper,
       { opacity: 0, scale: 0.95 },
       { opacity: 1, scale: 1, duration: 1.2, ease: 'power3.out' }
     )
+
+    // Individual SVG part stagger-reveal (reference pattern)
+    var purpleLeg = document.querySelector('.logo-purple-leg')
+    var whiteLeg = document.querySelector('.logo-white-leg')
+    var logoLetters = document.querySelectorAll('.logo-letter')
+    var logoDivider = document.querySelector('.logo-divider')
+    var logoTagMainGrp = document.querySelector('.logo-tagline-main-group')
+    var logoTagLetters = document.querySelectorAll('.logo-tagline-letter')
+    var logoTagMain = document.querySelector('.logo-tagline-main')
+
+    if (purpleLeg) {
+      tl.fromTo(purpleLeg, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.4)' }, '-=0.4')
+    }
+    if (whiteLeg) {
+      tl.to(whiteLeg, { opacity: 1, duration: 0.55, ease: 'power1.out' }, '-=0.35')
+    }
+    if (logoLetters.length) {
+      tl.to(logoLetters, { opacity: 1, duration: 0.5, ease: 'power1.out', stagger: 0.07 }, '-=0.3')
+    }
+    if (logoDivider) {
+      tl.fromTo(logoDivider, { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.5, ease: 'power4.inOut' }, '-=0.15')
+    }
+    if (logoTagMainGrp) {
+      tl.fromTo(logoTagMainGrp, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' }, '+=0.15')
+    }
+    if (logoTagLetters.length) {
+      tl.to(logoTagLetters, { opacity: 1, duration: 0.3, ease: 'power1.out', stagger: 0.025 }, '-=0.3')
+    }
+    if (logoTagMain) {
+      tl.to(logoTagMain, { opacity: 1, duration: 0.4 }, '-=0.2')
+    }
+
     // Orbital rings fade in (outer → middle → inner stagger)
     if (orbitalEls.length) {
       tl.fromTo(orbitalEls,
@@ -422,7 +457,7 @@
           })
         }
       })
-    }, { threshold: 0.25 })
+    }, { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' })
     sections.forEach(function (s) { sectionObs.observe(s) })
   }
 
