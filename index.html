@@ -3,584 +3,832 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ANAROCK Psychology of Sales Intelligence — A visual map of the human mind behind every real estate decision.">
+  <meta name="description" content="ANAROCK Psychology of Sales Intelligence — A visual map of the human mind behind every real estate decision. 12 psychological principles from the APA's Discovering Psychology curriculum, mapped to CRM actions.">
   <meta property="og:title" content="ANAROCK — Psychology of Sales Intelligence">
   <meta property="og:description" content="A visual map of the human mind behind every real estate decision.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://anarock-psychology-sales.vercel.app">
   <meta name="twitter:card" content="summary_large_image">
   <title>ANAROCK — Psychology of Sales Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <div class="reading-mode-bar">
-    <span class="rm-label">Reading Mode</span>
-    <div class="rm-pills">
-      <button class="rm-pill active" data-mode="visual">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        <span>Visual</span>
-      </button>
-      <button class="rm-pill" data-mode="standard">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-        <span>Standard</span>
-      </button>
-      <button class="rm-pill" data-mode="deep">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2.2 7-6.7-5-6.7 5 2.2-7-5.5-4h7z"/></svg>
-        <span>Deep Dive</span>
-      </button>
-    </div>
-  </div>
+  <div class="bg-vignette"></div>
+  <div class="page-wrapper">
 
-  <nav class="nav" id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo-container">
-        <img class="nav-logo-img" src="assets/anarock_logo_official_white.svg" alt="ANAROCK">
-      </a>
-      <div class="nav-links">
-        <a href="#principles">Principles</a>
-        <a href="#brain">Brain</a>
-        <a href="#funnel">Funnel</a>
-        <a href="#crm">CRM</a>
-        <a href="#loop">Loop</a>
-        <a href="#delta">Delta</a>
-      </div>
-    </div>
-    <div class="nav-progress"><div class="nav-progress-fill" id="navProgress"></div></div>
-  </nav>
-
-  <section class="hero" id="hero">
-    <div class="hero-card reveal">
-      <div class="hero-logo-wrapper">
-        <div class="hero-logo-glow"></div>
-        <div class="hero-logo-glow-accent"></div>
-        <div class="hero-orbital-tilt-1"><div class="hero-orbital"></div></div>
-        <div class="hero-orbital-tilt-2"><div class="hero-orbital-two"></div></div>
-        <div class="hero-orbital-tilt-3"><div class="hero-orbital-three"></div></div>
-        <img class="hero-logo-img" src="assets/anarock_logo_official_white.svg" alt="ANAROCK">
-      </div>
-      <div class="hero-tagline">Psychology of Sales</div>
-      <h1 class="hero-title">A visual map of the human mind behind every real estate decision.</h1>
-      <p class="hero-subtitle">12 psychological principles. One unified sales system.</p>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num" data-count="26">0</div>
-          <div class="hero-stat-lbl">Psychology Principles</div>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" data-count="12">0</div>
-          <div class="hero-stat-lbl">CRM Vectors</div>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" data-count="2.8">0</div>
-          <div class="hero-stat-lbl">NRI Conversion</div>
+    <nav class="nav" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo-container">
+          <img class="anarock-logo-img-vector" src="assets/anarock_logo_official_white.svg" alt="ANAROCK" style="height:36px;width:auto;">
+        </a>
+        <div class="nav-links">
+          <a href="#principles">Principles</a>
+          <a href="#brain">Brain</a>
+          <a href="#funnel">Funnel</a>
+          <a href="#crm">CRM</a>
+          <a href="#loop">Loop</a>
+          <a href="#delta">Delta</a>
         </div>
       </div>
-      <a href="#principles" class="btn-primary">
-        <span>Enter the Intelligence</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <svg viewBox="0 0 16 24" fill="none"><path d="M8 0v20M8 20l7-7M8 20l-7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </div>
-  </section>
+      <div class="nav-progress"><div class="nav-progress-fill" id="navProgress"></div></div>
+    </nav>
 
-  <section id="principles" class="section solid">
-    <div class="section-inner">
-      <div class="section-label">01 · The 12 Principles</div>
-      <h2 class="section-title">Each principle is one idea. One number. One CRM action.</h2>
-      <p class="section-desc">The image does the explaining — the text confirms it. Click any card for the full specification.</p>
-      <div class="grid-3 reveal-grid">
+    <section class="hero" id="hero">
+      <div class="hero-card reveal">
+        <div class="hero-logo-wrapper">
+          <div class="hero-logo-glow"></div>
+          <div class="hero-logo-glow-accent"></div>
+          <div class="hero-logo-ring"></div>
+          <div class="hero-logo-orbital-tilt-1">
+            <div class="hero-logo-orbital"></div>
+          </div>
+          <div class="hero-logo-orbital-tilt-2">
+            <div class="hero-logo-orbital-two"></div>
+          </div>
+          <div class="hero-logo-orbital-tilt-3">
+            <div class="hero-logo-orbital-three"></div>
+          </div>
+          <svg class="hero-logo-svg" viewBox="0 0 923 264" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="purpleLegGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#5c2568" />
+                <stop offset="35%" stop-color="#984f8f" />
+                <stop offset="70%" stop-color="#b660a8" />
+                <stop offset="100%" stop-color="#d946ef" />
+              </linearGradient>
+            </defs>
+            <!-- Logo paths -->
+            <path class="logo-purple-leg" d="M35 2 L35 260 L100 260 L100 210 L100 120 L85 120" fill="url(#purpleLegGrad)" stroke="url(#purpleLegGrad)" stroke-width="2"/>
+            <path class="logo-white-leg" d="M145 2 L145 260 L85 260 L85 130" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+            <!-- ANAROCK letters -->
+            <text class="logo-letter" x="230" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">A</text>
+            <text class="logo-letter" x="330" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">N</text>
+            <text class="logo-letter" x="420" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">A</text>
+            <text class="logo-letter" x="510" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">R</text>
+            <text class="logo-letter" x="595" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">O</text>
+            <text class="logo-letter" x="690" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">C</text>
+            <text class="logo-letter" x="780" y="172" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="96" fill="#ffffff" letter-spacing="-2">K</text>
+            <!-- Divider line below logo -->
+            <line class="logo-divider" x1="35" y1="195" x2="888" y2="195" stroke="rgba(159,82,149,0.3)" stroke-width="1"/>
+            <!-- Tagline: Property Consultants -->
+            <text class="logo-tagline-main-group" x="462" y="240" font-family="Space Grotesk, sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="6">PROPERTY CONSULTANTS</text>
+          </svg>
+          <div class="hero-logo-shimmer"></div>
+        </div>
 
-        <article class="principle-card reveal">
-          <div class="card-accent critical"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="42" fill="none" stroke="rgba(159,82,149,0.4)" stroke-width="1" stroke-dasharray="3 3"><animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="20s" repeatCount="indefinite"/></circle>
-              <circle cx="60" cy="60" r="14" fill="rgba(159,82,149,0.3)"><animate attributeName="r" values="12;16;12" dur="2.5s" repeatCount="indefinite"/></circle>
-              <text x="60" y="20" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9" font-family="Space Grotesk" font-weight="600" letter-spacing="2">FIRST PRICE</text>
-              <text x="60" y="110" text-anchor="middle" fill="rgba(212,107,224,0.9)" font-size="9" font-family="Space Grotesk" font-weight="600" letter-spacing="2">ANCHOR</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Decision</span><span class="principle-num">01</span></div>
-          <h3 class="principle-title">First Price Wins</h3>
-          <p class="principle-glance">The first number a buyer hears sticks. Everything after compares to it.</p>
-          <div class="principle-metric"><span class="metric-big">28%</span><span class="metric-lbl">less price drop</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Buyers compare every later offer to the first one they heard. Setting the anchor high makes any concession feel small.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Track <em>"first-price anchor"</em> on every lead. Script agents to lead with the premium unit, not the discount.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 11 · Judgment & Decision Making</p></div>
-          </div>
-        </article>
+        <p class="hero-subtitle">A visual map of the human mind behind every real estate decision. 12 psychological principles from the APA's Discovering Psychology curriculum, mapped to CRM actions.</p>
 
-        <article class="principle-card reveal">
-          <div class="card-accent high"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <rect x="50" y="20" width="20" height="14" fill="rgba(52,199,89,0.5)" stroke="rgba(52,199,89,0.8)" stroke-width="1"/>
-              <rect x="50" y="40" width="20" height="14" fill="rgba(255,214,10,0.5)" stroke="rgba(255,214,10,0.8)" stroke-width="1"/>
-              <rect x="50" y="60" width="20" height="14" fill="rgba(255,159,10,0.5)" stroke="rgba(255,159,10,0.8)" stroke-width="1"/>
-              <rect x="50" y="80" width="20" height="14" fill="rgba(159,82,149,0.5)" stroke="rgba(159,82,149,0.9)" stroke-width="1"/>
-              <text x="24" y="30" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">Safety</text>
-              <text x="20" y="50" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">Belong</text>
-              <text x="20" y="70" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">Esteem</text>
-              <text x="20" y="90" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">Legacy</text>
-            </svg>
+        <div class="hero-stats-row">
+          <div class="metric-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="metric-value" data-count="12">0</div>
+            <div class="metric-label">Principles</div>
           </div>
-          <div class="principle-meta"><span class="principle-tag">Motivation</span><span class="principle-num">02</span></div>
-          <h3 class="principle-title">Why They Buy</h3>
-          <p class="principle-glance">Different buyers want different things. Match the message to the need.</p>
-          <div class="principle-metric"><span class="metric-big">2.4x</span><span class="metric-lbl">better close rate</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Safety, belonging, esteem, legacy — each rung of the need ladder demands a different pitch. Same property, different story.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Tag every lead with a <em>motivation tier</em> at intake. Auto-switch sales scripts based on the tag.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 12 · Motivation & Emotion</p></div>
+          <div class="metric-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="metric-value" data-count="10">0</div>
+            <div class="metric-label">CRM Vectors</div>
           </div>
-        </article>
+          <div class="metric-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="metric-value" data-count="6">0</div>
+            <div class="metric-label">Decision Levers</div>
+          </div>
+        </div>
 
-        <article class="principle-card reveal">
-          <div class="card-accent critical"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="20" cy="60" r="4" fill="rgba(159,82,149,0.4)"/>
-              <circle cx="45" cy="60" r="4" fill="rgba(159,82,149,0.4)"/>
-              <circle cx="70" cy="60" r="4" fill="rgba(212,107,224,0.9)"><animate attributeName="r" values="3;7;3" dur="1.5s" repeatCount="indefinite"/></circle>
-              <circle cx="95" cy="60" r="4" fill="rgba(159,82,149,0.4)"/>
-              <text x="60" y="95" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Space Grotesk" letter-spacing="1">UNPREDICTABLE REWARDS</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Habit</span><span class="principle-num">03</span></div>
-          <h3 class="principle-title">Surprise Builds Habit</h3>
-          <p class="principle-glance">Random, unexpected rewards beat predictable ones. The brain craves surprise.</p>
-          <div class="principle-metric"><span class="metric-big">67%</span><span class="metric-lbl">more re-engagement</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Slot machines work because rewards are unpredictable. WhatsApp CRM follow-ups should mix 5 message types randomly — not on a fixed schedule.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Replace fixed-interval scheduling with a <em>variable-ratio</em> engine. Property drops, market insights, tips — unpredictable sequence.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 8 · Learning · Skinner</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent high"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <rect x="20" y="50" width="20" height="20" fill="rgba(212,107,224,0.8)" rx="3"/>
-              <rect x="50" y="50" width="20" height="20" fill="rgba(159,82,149,0.3)" rx="3"/>
-              <rect x="80" y="50" width="20" height="20" fill="rgba(159,82,149,0.3)" rx="3"/>
-              <rect x="20" y="80" width="20" height="20" fill="rgba(159,82,149,0.3)" rx="3"/>
-              <rect x="50" y="80" width="20" height="20" fill="rgba(159,82,149,0.3)" rx="3"/>
-              <rect x="80" y="80" width="20" height="20" fill="rgba(212,107,224,0.8)" rx="3"/>
-              <text x="30" y="115" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">FIRST</text>
-              <text x="90" y="115" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">LAST</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Memory</span><span class="principle-num">04</span></div>
-          <h3 class="principle-title">First & Last Stick</h3>
-          <p class="principle-glance">Buyers remember the first and last thing. The middle is forgotten.</p>
-          <div class="principle-metric"><span class="metric-big">34%</span><span class="metric-lbl">lift in close</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>The primacy-recency effect means property tours should show the best option first, runner-up last. Middle options barely register in memory.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p><em>Tour sequencer</em> places highest-fit property in position 1 and 2nd-highest in the final position.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 9 · Remembering & Forgetting</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent critical"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="32" fill="none" stroke="rgba(159,82,149,0.4)" stroke-width="1" stroke-dasharray="3 3"><animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="30s" repeatCount="indefinite"/></circle>
-              <circle cx="60" cy="60" r="12" fill="rgba(212,107,224,0.5)"/>
-              <text x="60" y="65" text-anchor="middle" fill="white" font-size="10" font-family="Space Grotesk" font-weight="600">YOU</text>
-              <text x="60" y="22" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">TIME</text>
-              <text x="100" y="65" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">MOOD</text>
-              <text x="60" y="106" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">PLACE</text>
-              <text x="20" y="65" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">STRESS</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Context</span><span class="principle-num">05</span></div>
-          <h3 class="principle-title">Situation > Personality</h3>
-          <p class="principle-glance">A tired buyer at 11pm is not the same as a fresh buyer at noon.</p>
-          <div class="principle-metric"><span class="metric-big">41%</span><span class="metric-lbl">fewer frictions</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>The situation — time, mood, stress — matters more than personality. A "difficult" lead is often just an exhausted one. CRM logs context and adapts.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Tag every interaction with <em>situational state</em>. Auto-route late-night or stressed leads to gentle nurture.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 19 · Power of the Situation</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent medium"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(159,82,149,0.2)" stroke-width="1"/>
-              <circle cx="60" cy="60" r="28" fill="none" stroke="rgba(159,82,149,0.35)" stroke-width="1"/>
-              <circle cx="60" cy="60" r="18" fill="none" stroke="rgba(159,82,149,0.55)" stroke-width="1"/>
-              <circle cx="60" cy="60" r="6" fill="rgba(212,107,224,0.9)"><animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/></circle>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Identity</span><span class="principle-num">06</span></div>
-          <h3 class="principle-title">They Buy Who They Are</h3>
-          <p class="principle-glance">A home is an identity statement. Match the buyer's self-image.</p>
-          <div class="principle-metric"><span class="metric-big">53%</span><span class="metric-lbl">close rate lift</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Investors see themselves as shrewd. Parents as providers. Status seekers as successful. CRM detects self-concept and matches messaging.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Add <em>self-concept vector</em> to lead profile. Scripts swap based on: Investor / Provider / Status Seeker / Legacy Builder.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 15 · The Self</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent critical"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <text x="60" y="48" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9" font-family="Space Grotesk" font-weight="600">EXPECTATION</text>
-              <text x="60" y="64" text-anchor="middle" fill="rgba(212,107,224,0.9)" font-size="12" font-family="Space Grotesk" font-weight="700">→</text>
-              <text x="60" y="80" text-anchor="middle" fill="rgba(52,199,89,0.9)" font-size="9" font-family="Space Grotesk" font-weight="600">RESULTS</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Performance</span><span class="principle-num">07</span></div>
-          <h3 class="principle-title">Belief Becomes Reality</h3>
-          <p class="principle-glance">If a manager believes an agent is great, that agent performs great.</p>
-          <div class="principle-metric"><span class="metric-big">22%</span><span class="metric-lbl">agent boost</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>The Pygmalion effect: people rise to expectations. Manager dashboards that highlight <em>potential</em> (not past failure) drive better performance.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Manager view shows <em>growth signals</em> — similar-deal closures, predictive assignment to premium inventory.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 20 · Constructing Social Reality</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent high"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <rect x="30" y="40" width="60" height="40" fill="none" stroke="rgba(159,82,149,0.5)" stroke-width="1.5"/>
-              <polygon points="40,70 50,58 60,64 75,48 82,70" fill="rgba(212,107,224,0.3)"/>
-              <circle cx="76" cy="47" r="4" fill="rgba(255,214,10,0.7)"/>
-              <text x="60" y="28" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Space Grotesk" letter-spacing="1">REALITY</text>
-              <text x="60" y="102" text-anchor="middle" fill="rgba(212,107,224,0.9)" font-size="7" font-family="Space Grotesk" letter-spacing="1">PERCEPTION</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Perception</span><span class="principle-num">08</span></div>
-          <h3 class="principle-title">Perception Beats Reality</h3>
-          <p class="principle-glance">Buyers don't see the property — they see what their brain reconstructs.</p>
-          <div class="principle-metric"><span class="metric-big">31%</span><span class="metric-lbl">more visits</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Top-down processing: expectations shape perception. High-contrast hero shots, golden-ratio framing, consistent lighting make a listing feel more valuable.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Property media follows perceptual checklist: contrast ≥ 80%, 3-image hero grids, lighting consistency automated.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 7 · Sensation & Perception</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent high"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <rect x="35" y="45" width="50" height="40" rx="6" fill="rgba(159,82,149,0.2)" stroke="rgba(159,82,149,0.6)" stroke-width="1.5"/>
-              <path d="M45 45v-8c0-8 6-14 15-14s15 6 15 14v8" fill="none" stroke="rgba(159,82,149,0.6)" stroke-width="1.5"/>
-              <circle cx="60" cy="65" r="5" fill="rgba(212,107,224,0.9)"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Trust</span><span class="principle-num">09</span></div>
-          <h3 class="principle-title">Trust Has a Shape</h3>
-          <p class="principle-glance">Some buyers need constant updates. Some need space. Some want direct asks.</p>
-          <div class="principle-metric"><span class="metric-big">47%</span><span class="metric-lbl">nurture efficiency</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p><em>Anxious</em> buyers need micro-reassurance. <em>Avoidant</em> buyers need data-rich, low-pressure content. <em>Secure</em> buyers respond to direct CTAs. CRM auto-detects from interaction patterns.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Add <em>attachment-style detection</em> to intake. Auto-configure nurture cadence. Anxious=high touch. Avoidant=low touch. Secure=direct.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 5 · Attachment Theory</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent critical"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="34" fill="none" stroke="rgba(159,82,149,0.5)" stroke-width="1.5"/>
-              <ellipse cx="60" cy="60" rx="34" ry="14" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
-              <ellipse cx="60" cy="60" rx="14" ry="34" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
-              <text x="40" y="40" text-anchor="middle" fill="rgba(212,107,224,0.9)" font-size="8" font-family="Figtree" font-weight="700">US</text>
-              <text x="82" y="40" text-anchor="middle" fill="rgba(52,199,89,0.9)" font-size="8" font-family="Figtree" font-weight="700">GCC</text>
-              <text x="60" y="86" text-anchor="middle" fill="rgba(255,214,10,0.9)" font-size="8" font-family="Figtree" font-weight="700">SG</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Culture</span><span class="principle-num">10</span></div>
-          <h3 class="principle-title">Culture Decides</h3>
-          <p class="principle-glance">American, Gulf, and Singaporean buyers — three different decision architectures.</p>
-          <div class="principle-metric"><span class="metric-big">2.8x</span><span class="metric-lbl">NRI conversion</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>US buyers want ROI and independence. GCC buyers want family validation. Singaporean buyers want legacy and growth. One pitch fails all three.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p><em>Cultural router:</em> US → ROI-led. GCC → family-validated. SG → legacy-narrative. Geo-tagged auto-routing at ingestion.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 26 · Cultural Psychology</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent medium"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <path d="M10 60 L22 60 L26 48 L32 72 L38 52 L44 64 L54 60 L68 60 L72 42 L78 78 L84 50 L90 60 L110 60" fill="none" stroke="rgba(212,107,224,0.9)" stroke-width="2"><animate attributeName="stroke-dasharray" values="0 600;600 0" dur="3s" repeatCount="indefinite"/></path>
-              <text x="60" y="102" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8" font-family="Space Grotesk" letter-spacing="1">COGNITIVE LOAD</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Stress</span><span class="principle-num">11</span></div>
-          <h3 class="principle-title">Stress Simplifies</h3>
-          <p class="principle-glance">Stressed buyers default to "no." Reduce stress or reduce choices.</p>
-          <div class="principle-metric"><span class="metric-big">38%</span><span class="metric-lbl">faster close</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>Chronic stress impairs the prefrontal cortex — the brain's decision center. Voice stress analysis detects overload. CRM simplifies options for high-stress leads.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Voice stress score from calls. High-stress leads → only RERA-verified, ready-to-move inventory. <em>Reduce choice, increase trust.</em></p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 23 · Health, Mind & Behavior</p></div>
-          </div>
-        </article>
-
-        <article class="principle-card reveal">
-          <div class="card-accent high"></div>
-          <div class="principle-visual">
-            <svg class="principle-svg" viewBox="0 0 120 120">
-              <circle cx="20" cy="60" r="7" fill="rgba(212,107,224,0.9)"/>
-              <circle cx="45" cy="60" r="6" fill="rgba(159,82,149,0.6)"/>
-              <circle cx="70" cy="60" r="6" fill="rgba(159,82,149,0.6)"/>
-              <circle cx="95" cy="60" r="6" fill="rgba(159,82,149,0.6)"/>
-              <line x1="27" y1="60" x2="39" y2="60" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-              <line x1="51" y1="60" x2="64" y2="60" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-              <line x1="76" y1="60" x2="89" y2="60" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-              <text x="20" y="48" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="6" font-family="Figtree">Start</text>
-              <text x="95" y="48" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="6" font-family="Figtree">Legacy</text>
-              <text x="20" y="82" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">25</text>
-              <text x="45" y="82" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">35</text>
-              <text x="70" y="82" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">45</text>
-              <text x="95" y="82" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Figtree">+</text>
-            </svg>
-          </div>
-          <div class="principle-meta"><span class="principle-tag">Life Stage</span><span class="principle-num">12</span></div>
-          <h3 class="principle-title">Age Changes the Want</h3>
-          <p class="principle-glance">A 28-year-old and a 58-year-old want different things. Match the season.</p>
-          <div class="principle-metric"><span class="metric-big">3.1x</span><span class="metric-lbl">engagement</span></div>
-          <div class="principle-expand">
-            <div class="expand-row"><span class="expand-lbl">What it means</span><p>25-35: first home, near work. 35-45: family, schools, space. 45-60: investment, downsizing. 60+: legacy, medical access, community.</p></div>
-            <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Auto-detect life stage. Match inventory + messaging to the season. Update as life events are detected.</p></div>
-            <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 4 · Life Span Development</p></div>
-          </div>
-        </article>
-
+        <a href="#principles" class="btn-primary">
+          <span>Enter the Intelligence</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-    </div>
-  </section>
 
-  <section id="brain" class="section solid-alt">
-    <div class="section-inner">
-      <div class="section-label">02 · The 3-Step Mind</div>
-      <h2 class="section-title">Every sale is a brain event.</h2>
-      <p class="section-desc">Three steps. 100,000 times a day across India. ANAROCK orchestrates them.</p>
-      <div class="brain-flow">
-        <div class="brain-stage reveal">
-          <div class="brain-stage-num">1</div>
-          <div class="brain-svg-wrap">
-            <svg class="brain-svg" viewBox="0 0 180 140">
-              <circle cx="90" cy="70" r="60" fill="rgba(212,107,224,0.08)"/>
-              <ellipse cx="90" cy="70" rx="42" ry="48" fill="none" stroke="rgba(159,82,149,0.5)" stroke-width="2"/>
-              <path d="M90 28 Q62 42 62 70 Q62 98 90 112" fill="none" stroke="rgba(212,107,224,0.6)" stroke-width="1.5"/>
-              <path d="M90 28 Q118 42 118 70 Q118 98 90 112" fill="none" stroke="rgba(212,107,224,0.6)" stroke-width="1.5"/>
-              <circle cx="52" cy="18" r="4" fill="rgba(255,214,10,0.7)"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
-              <text x="30" y="12" fill="rgba(255,255,255,0.5)" font-size="8" font-family="Space Grotesk" letter-spacing="1">CUE</text>
-            </svg>
-          </div>
-          <h3 class="brain-stage-title">Brain Sees</h3>
-          <p class="brain-stage-desc">A WhatsApp ping. A site visit. A brochure. The brain receives a signal.</p>
-          <div class="brain-stage-tag">Awareness</div>
-        </div>
-        <div class="brain-arrow">→</div>
-        <div class="brain-stage reveal">
-          <div class="brain-stage-num">2</div>
-          <div class="brain-svg-wrap">
-            <svg class="brain-svg" viewBox="0 0 180 140">
-              <ellipse cx="90" cy="70" rx="42" ry="48" fill="none" stroke="rgba(159,82,149,0.5)" stroke-width="2"/>
-              <circle cx="90" cy="50" r="7" fill="rgba(212,107,224,0.9)"/>
-              <circle cx="70" cy="80" r="5" fill="rgba(255,159,10,0.7)"/>
-              <circle cx="110" cy="92" r="6" fill="rgba(52,199,89,0.7)"/>
-              <line x1="90" y1="50" x2="70" y2="80" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-              <line x1="90" y1="50" x2="110" y2="92" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-              <text x="145" y="44" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Space Grotesk" letter-spacing="1">FEEL</text>
-              <text x="145" y="58" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Space Grotesk" letter-spacing="1">THINK</text>
-              <text x="145" y="72" fill="rgba(255,255,255,0.5)" font-size="7" font-family="Space Grotesk" letter-spacing="1">WANT</text>
-            </svg>
-          </div>
-          <h3 class="brain-stage-title">Brain Reacts</h3>
-          <p class="brain-stage-desc">Emotion, memory, motivation, situation — all 12 principles fire at once.</p>
-          <div class="brain-stage-tag">Nurture</div>
-        </div>
-        <div class="brain-arrow">→</div>
-        <div class="brain-stage reveal">
-          <div class="brain-stage-num">3</div>
-          <div class="brain-svg-wrap">
-            <svg class="brain-svg" viewBox="0 0 180 140">
-              <circle cx="90" cy="70" r="42" fill="none" stroke="rgba(52,199,89,0.3)" stroke-width="1" stroke-dasharray="4 3"><animateTransform attributeName="transform" type="rotate" from="0 90 70" to="360 90 70" dur="18s" repeatCount="indefinite"/></circle>
-              <path d="M65 76 L86 97 L118 52" fill="none" stroke="rgba(52,199,89,0.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="90" y="22" text-anchor="middle" fill="rgba(212,107,224,0.7)" font-size="9" font-family="Space Grotesk" letter-spacing="2">BUY</text>
-            </svg>
-          </div>
-          <h3 class="brain-stage-title">Brain Decides</h3>
-          <p class="brain-stage-desc">Yes. The booking happens. A real human moment — proven by science.</p>
-          <div class="brain-stage-tag">Close</div>
-        </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <svg viewBox="0 0 16 24" fill="none"><path d="M8 0v20M8 20l7-7M8 20l-7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="funnel" class="section">
-    <div class="section-inner">
-      <div class="section-label">03 · The Velocity Funnel</div>
-      <h2 class="section-title">Four stages. Each one faster than the last.</h2>
-      <p class="section-desc">Psychology applied to each funnel layer compresses the cycle.</p>
-      <div class="funnel-vis">
-        <svg viewBox="0 0 780 480" class="funnel-svg">
-          <defs>
-            <linearGradient id="fStrong"><stop offset="0%" stop-color="rgba(159,82,149,0.8)"/><stop offset="100%" stop-color="rgba(212,107,224,0.8)"/></linearGradient>
-            <linearGradient id="fInterest"><stop offset="0%" stop-color="rgba(212,107,224,0.6)"/><stop offset="100%" stop-color="rgba(159,82,149,0.6)"/></linearGradient>
-            <linearGradient id="fDecision"><stop offset="0%" stop-color="rgba(255,159,10,0.7)"/><stop offset="100%" stop-color="rgba(255,214,10,0.6)"/></linearGradient>
-            <linearGradient id="fClose"><stop offset="0%" stop-color="rgba(52,199,89,0.7)"/><stop offset="100%" stop-color="rgba(0,200,150,0.7)"/></linearGradient>
-          </defs>
-          <path d="M40 45 L740 45 L640 145 L140 145 Z" fill="url(#fStrong)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-          <text x="390" y="100" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="18" font-weight="700" letter-spacing="3">AWARENESS</text>
-          <path d="M140 165 L640 165 L560 265 L220 265 Z" fill="url(#fInterest)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-          <text x="390" y="220" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="18" font-weight="700" letter-spacing="3">INTEREST</text>
-          <path d="M220 285 L560 285 L500 385 L280 385 Z" fill="url(#fDecision)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-          <text x="390" y="340" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="18" font-weight="700" letter-spacing="3">DECISION</text>
-          <path d="M280 405 L500 405 L470 475 L310 475 Z" fill="url(#fClose)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-          <text x="390" y="445" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="14" font-weight="700" letter-spacing="3">CLOSE</text>
-          <text x="40" y="100" fill="rgba(255,255,255,0.35)" font-family="Figtree" font-size="11">100%</text>
-          <text x="40" y="220" fill="rgba(255,255,255,0.35)" font-family="Figtree" font-size="11">12%</text>
-          <text x="40" y="340" fill="rgba(255,255,255,0.35)" font-family="Figtree" font-size="11">2.4%</text>
-          <text x="40" y="445" fill="rgba(255,255,255,0.35)" font-family="Figtree" font-size="11">0.72%</text>
-        </svg>
-        <div class="funnel-callouts">
-          <div class="funnel-callout reveal"><div class="callout-dot" style="background:var(--brand-purple)"></div><div><strong>Awareness</strong><span>Perception · Cognitive Fluency</span></div><div class="callout-num">+35% recall</div></div>
-          <div class="funnel-callout reveal"><div class="callout-dot" style="background:var(--brand-purple-light)"></div><div><strong>Interest</strong><span>Motivation · Conditioning</span></div><div class="callout-num">2.4x engage</div></div>
-          <div class="funnel-callout reveal"><div class="callout-dot" style="background:#ff9f0a"></div><div><strong>Decision</strong><span>Anchoring · Situation</span></div><div class="callout-num">-28% concession</div></div>
-          <div class="funnel-callout reveal"><div class="callout-dot" style="background:#34c759"></div><div><strong>Close</strong><span>Attachment · Pygmalion</span></div><div class="callout-num">+53% retention</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- SECTION 01 · The 12 Principles -->
+    <section id="principles" class="section solid">
+      <div class="section-inner">
+        <div class="section-label">01 &middot; The 12 Principles</div>
+        <h2 class="section-title">The Architecture of Every Decision</h2>
+        <p class="section-desc">Each principle is one idea. One number. One CRM action. The image does the explaining — the text confirms it. Click any card for the full specification.</p>
 
-  <section id="crm" class="section solid-alt">
-    <div class="section-inner">
-      <div class="section-label">04 · The CRM System</div>
-      <h2 class="section-title">10 features. One psychological engine.</h2>
-      <p class="section-desc">Each card is a deployable CRM feature. Click to expand. Hover for depth.</p>
-      <div class="bento-grid reveal-grid">
+        <div class="bento-grid reveal-grid">
 
-        <div class="bento-card bento-card-large reveal">
-          <div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6c-2 0-3 1-5 3C5 12 5 14 7 16c1 1 1 1 3 0 0-1 0-2 2-3 1 3 2 4 4 3 3-1 3-4 1-6-2-2-3-3-5-4z"/></svg></div>
-          <h3>Psychographic Lead Schema</h3>
-          <p class="bento-glance">Every lead gets 12 psychological tags. Not just budget and location — but <em>who they are</em>.</p>
-          <div class="bento-reveal">
-            <div class="bento-tag-list">
-              <span class="bento-tag">Attachment Style</span><span class="bento-tag">Motivation Tier</span><span class="bento-tag">Cultural Orientation</span><span class="bento-tag">Stress Baseline</span><span class="bento-tag">Cognitive Style</span><span class="bento-tag">Decision Speed</span><span class="bento-tag">Risk Tolerance</span><span class="bento-tag">Self-Concept</span><span class="bento-tag">Life Stage</span><span class="bento-tag">Social Proof Sensitivity</span><span class="bento-tag">Anchoring Susceptibility</span><span class="bento-tag">Attribution Tendency</span>
+          <!-- 1. Anchoring -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent critical"></div>
+            <div class="principle-top">
+              <div class="principle-number">01</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
             </div>
-            <div class="bento-kpi">+320% profile depth</div>
-            <p class="bento-spec">Extend Astra Platinum's lead profile. Detection via voice analysis, response latency, interaction history, and demographic enrichment.</p>
+            <h3 class="principle-title">First Price Wins</h3>
+            <p class="principle-subtitle">The first number a buyer hears becomes the reference point. Everything after compares to it.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">28%</div>
+              <div class="principle-stat-label">less price drop</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>The first number a buyer hears becomes the reference point. Everything after compares to it. Set premium anchor first — every discount feels bigger.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Track first-price-anchor on every lead</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 11 &middot; Judgment &amp; Decision Making</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Motivation -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent high"></div>
+            <div class="principle-top">
+              <div class="principle-number">02</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="4" width="8" height="16" rx="2"/><rect x="4" y="9" width="16" height="6" rx="1"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Why They Buy</h3>
+            <p class="principle-subtitle">Safety, belonging, esteem, legacy. Each rung of the need ladder demands a different pitch. Same property, different story.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">2.4x</div>
+              <div class="principle-stat-label">better close rate</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Safety, belonging, esteem, legacy. Each rung of the need ladder demands a different pitch. Same property, different story.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Tag leads by motivation tier at intake. Auto-switch scripts by motivation tag.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 12 &middot; Motivation &amp; Emotion</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Habit -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent critical"></div>
+            <div class="principle-top">
+              <div class="principle-number">03</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h5l3-7 4 16 3-9h3"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Surprise Builds Habit</h3>
+            <p class="principle-subtitle">Random, unpredictable rewards beat scheduled ones. Slot machines work because rewards are unpredictable.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">67%</div>
+              <div class="principle-stat-label">more re-engagement</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Random, unpredictable rewards beat scheduled ones. Slot machines work because rewards are unpredictable.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Variable-ratio WhatsApp nurture replaces fixed schedules. Mix 5 message types randomly.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 8 &middot; Learning &middot; Skinner</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Memory -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent high"></div>
+            <div class="principle-top">
+              <div class="principle-number">04</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><rect x="7" y="7" width="10" height="10"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">First &amp; Last Stick</h3>
+            <p class="principle-subtitle">Buyers remember the first and last property shown. The middle is forgotten.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">34%</div>
+              <div class="principle-stat-label">lift in close</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Buyers remember the first and last property shown. The middle is forgotten.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Tour sequencer for primacy-recency. Best first, second-best last.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 9 &middot; Remembering &amp; Forgetting</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Situation -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent critical"></div>
+            <div class="principle-top">
+              <div class="principle-number">05</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M12 2c-4 0-7 4-7 9s3 9 7 9"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Situation &gt; Personality</h3>
+            <p class="principle-subtitle">A tired buyer at 11pm is not the same person as a fresh buyer at noon.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">41%</div>
+              <div class="principle-stat-label">fewer frictions</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>A tired buyer at 11pm is not the same person as a fresh buyer at noon.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Log situational state. Adapt messaging. Stress-aware routing.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 19 &middot; Power of the Situation</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Identity -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent medium"></div>
+            <div class="principle-top">
+              <div class="principle-number">06</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3-6 8-6s8 2 8 6"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">They Buy Who They Are</h3>
+            <p class="principle-subtitle">Investors see themselves as shrewd. Parents as providers. Match the self-concept.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">53%</div>
+              <div class="principle-stat-label">close rate lift</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>A home is an identity statement. Investors see themselves as shrewd. Parents as providers.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Detect self-concept vector on profile. Match messaging.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 15 &middot; The Self</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Expectation -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent critical"></div>
+            <div class="principle-top">
+              <div class="principle-number">07</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l3 6-7 2 4-8z"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Belief Becomes Reality</h3>
+            <p class="principle-subtitle">If a manager believes an agent is great, that agent performs great. The Pygmalion effect.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">22%</div>
+              <div class="principle-stat-label">agent boost</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>If a manager believes an agent is great, that agent performs great. The Pygmalion effect.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Manager dashboards highlight potential, not failure. Pygmalion agent board.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 20 &middot; Constructing Social Reality</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Perception -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent high"></div>
+            <div class="principle-top">
+              <div class="principle-number">08</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Perception Beats Reality</h3>
+            <p class="principle-subtitle">Buyers don't see the property. They see what their brain reconstructs from expectation.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">31%</div>
+              <div class="principle-stat-label">more visits</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Buyers don't see the property. They see what their brain reconstructs from expectation.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Perceptual checklist for property media. Media quality compliance.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 7 &middot; Sensation &amp; Perception</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Trust -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent high"></div>
+            <div class="principle-top">
+              <div class="principle-number">09</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="14" height="12" rx="2"/><circle cx="12" cy="15" r="1.5"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Trust Has a Shape</h3>
+            <p class="principle-subtitle">Anxious buyers need micro-reassurance. Avoidant buyers need data-rich, low-pressure content.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">47%</div>
+              <div class="principle-stat-label">nurture efficiency</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Anxious buyers need micro-reassurance. Avoidant buyers need data-rich, low-pressure content.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Auto-detect attachment style from interaction. Attachment cadence engine.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 5 &middot; Attachment Theory</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Culture -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent critical"></div>
+            <div class="principle-top">
+              <div class="principle-number">10</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Culture Decides</h3>
+            <p class="principle-subtitle">US, GCC, and Singaporean buyers have three different decision architectures. One pitch fails all three.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">2.8x</div>
+              <div class="principle-stat-label">NRI conversion</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>US, GCC, and Singaporean buyers have three different decision architectures. One pitch fails all three.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Cultural router for NRI leads. Geo-tagged auto-routing.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 26 &middot; Cultural Psychology</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Stress -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent medium"></div>
+            <div class="principle-top">
+              <div class="principle-number">11</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L6 14h7L10 22l9-16h-7z"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Stress Simplifies</h3>
+            <p class="principle-subtitle">Stressed buyers default to 'no.' Reduce stress or reduce choices.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">38%</div>
+              <div class="principle-stat-label">faster close</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>Stressed buyers default to 'no.' Reduce stress or reduce choices.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Voice stress analysis detects overload. High-stress leads get simplified options.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 23 &middot; Health, Mind &amp; Behavior</p></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Life Stage -->
+          <article class="principle-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="card-accent high"></div>
+            <div class="principle-top">
+              <div class="principle-number">12</div>
+              <div class="principle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+              </div>
+            </div>
+            <h3 class="principle-title">Age Changes the Want</h3>
+            <p class="principle-subtitle">A 28-year-old and a 58-year-old want different things. Match the season.</p>
+            <div class="principle-stat">
+              <div class="principle-stat-value">3.1x</div>
+              <div class="principle-stat-label">engagement</div>
+            </div>
+            <div class="principle-expand">
+              <div class="principle-detail">
+                <div class="expand-row"><span class="expand-lbl">What it means</span><p>A 28-year-old and a 58-year-old want different things. Match the season.</p></div>
+                <div class="expand-row"><span class="expand-lbl">CRM Action</span><p>Auto-detect life stage. Match inventory. Life-stage segmenter.</p></div>
+                <div class="expand-row source-row"><span class="expand-lbl">Source</span><p>Unit 4 &middot; Life Span Development</p></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02 · The 3-Step Mind -->
+    <section id="brain" class="section solid-alt">
+      <div class="section-inner">
+        <div class="section-label">02 &middot; The 3-Step Mind</div>
+        <h2 class="section-title">Every Sale Is a Brain Event</h2>
+        <p class="section-desc">Three steps. 100,000 times a day across India. ANAROCK orchestrates them.</p>
+
+        <div class="journey-flow">
+          <div class="journey-step reveal">
+            <div class="journey-step-number">1</div>
+            <div class="journey-step-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3 class="journey-step-title">Brain Sees</h3>
+            <p class="journey-step-desc">A WhatsApp ping. A site visit. A brochure. Sensory input enters the brain.</p>
+            <div class="journey-step-tag">Awareness</div>
+          </div>
+          <div class="journey-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="journey-step reveal">
+            <div class="journey-step-number">2</div>
+            <div class="journey-step-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+            </div>
+            <h3 class="journey-step-title">Brain Reacts</h3>
+            <p class="journey-step-desc">Emotion, memory, motivation, situation — all 12 principles fire at once in 300ms.</p>
+            <div class="journey-step-tag">Nurture</div>
+          </div>
+          <div class="journey-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="journey-step reveal">
+            <div class="journey-step-number">3</div>
+            <div class="journey-step-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="journey-step-title">Brain Decides</h3>
+            <p class="journey-step-desc">Yes. The booking happens. A real human moment — proven by science.</p>
+            <div class="journey-step-tag">Close</div>
           </div>
         </div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg></div><h3>Variable-Ratio Nurture</h3><p class="bento-glance">Replace fixed emails. WhatsApp messages arrive unpredictably. The brain craves surprise.</p><div class="bento-reveal"><div class="bento-kpi">+67% re-engagement</div><p class="bento-spec">5 message types rotated randomly. Property drops, market insights, lifestyle content — never on schedule.</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg></div><h3>First & Last Tour Order</h3><p class="bento-glance">Best property first. Runner-up last. Middle barely registers in memory.</p><div class="bento-reveal"><div class="bento-kpi">+34% close</div><p class="bento-spec">Tour sequencer places highest-fit in position 1 and 2nd-highest in final position.</p></div></div>
-
-        <div class="bento-card bento-card-wide reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9"/></svg></div><h3>Cultural Router for NRI</h3><p class="bento-glance">US → ROI and independence. GCC → family and community. SG → legacy and growth. One pitch fails all three.</p><div class="bento-reveal"><div class="cultural-routing"><div class="culture-route"><div class="culture-flag">US</div><div class="culture-arrow">→</div><div class="culture-content">ROI data · independence · speed</div></div><div class="culture-route"><div class="culture-flag">GCC</div><div class="culture-arrow">→</div><div class="culture-content">family validation · community</div></div><div class="culture-route"><div class="culture-flag">SG</div><div class="culture-arrow">→</div><div class="culture-content">legacy · generational wealth</div></div></div><div class="bento-kpi">2.8x NRI conversion</div></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h5l3-7 4 16 3-9h3"/></svg></div><h3>Stress-Aware Routing</h3><p class="bento-glance">Voice analysis detects stress. Stressed buyers want safe, simple, verified options.</p><div class="bento-reveal"><div class="bento-kpi">38% faster close</div><p class="bento-spec">High-stress leads auto-routed to RERA-verified, ready-to-move inventory with ROI guarantees. Reduce choice, increase trust.</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l3 6-7 2 4-8z"/></svg></div><h3>Pygmalion Agent Board</h3><p class="bento-glance">Manager sees agent <em>potential</em>, not past failure. Belief drives performance.</p><div class="bento-reveal"><div class="bento-kpi">+22% performance</div><p class="bento-spec">Dashboard highlights similar-deal closures. Premium inventory assigned to high-potential agents.</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="14" height="12" rx="2"/><path d="M9 9V7c0-2 1-4 3-4s3 2 3 4v2"/><circle cx="12" cy="15" r="1.5"/></svg></div><h3>Attachment Cadence</h3><p class="bento-glance">Anxious = updates. Avoidant = space. Secure = direct CTAs. Match the trust style.</p><div class="bento-reveal"><div class="bento-kpi">47% nurture efficiency</div><p class="bento-spec">Auto-detect from interaction patterns. Auto-configure cadence and tone.</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3>Life-Stage Segmenter</h3><p class="bento-glance">25-35: first home. 35-45: family. 45-60: investment. 60+: legacy.</p><div class="bento-reveal"><div class="bento-kpi">3.1x engagement</div><p class="bento-spec">Auto-detect life stage from demographics. Match inventory + messaging. Update as life events detected.</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L6 14h7L10 22l9-16h-7z"/></svg></div><h3>Status Quo Breaker</h3><p class="bento-glance">Buyers who delay are losing. Reframe delay as a cost, not a choice.</p><div class="bento-reveal"><div class="bento-kpi">41% faster recovery</div><p class="bento-spec">Detect hesitation. Trigger loss-framed messages: "Viewed 3x this week" + "Price revision in 7 days."</p></div></div>
-
-        <div class="bento-card reveal"><div class="bento-icon-wrap"><svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><circle cx="20" cy="8" r="4"/><path d="M4 20c0-4 3-6 8-6s8 2 8 6"/></svg></div><h3>Social Proof Injector</h3><p class="bento-glance">At decision stage, show "people like you bought this." Trust by similarity.</p><div class="bento-reveal"><div class="bento-kpi">+33% close rate</div><p class="bento-spec">Auto-serve cohort data, testimonials, and similar-buyer stories at the right funnel moment.</p></div></div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="loop" class="section">
-    <div class="section-inner">
-      <div class="section-label">05 · Matthew's Loop</div>
-      <h2 class="section-title">The improvement engine. Always running.</h2>
-      <p class="section-desc">A bounded feedback loop. Every cycle measures, adjusts, improves. Stops when 12/12 vectors reach benchmark.</p>
-      <div class="loop-vis">
-        <svg viewBox="0 0 780 400" class="loop-svg">
-          <defs>
-            <linearGradient id="loopArc"><stop offset="0%" stop-color="rgba(159,82,149,0.7)"/><stop offset="50%" stop-color="rgba(212,107,224,0.7)"/><stop offset="100%" stop-color="rgba(159,82,149,0.7)"/></linearGradient>
-          </defs>
-          <circle cx="390" cy="200" r="150" fill="none" stroke="url(#loopArc)" stroke-width="1.5" stroke-dasharray="6 4"><animateTransform attributeName="transform" type="rotate" from="0 390 200" to="360 390 200" dur="40s" repeatCount="indefinite"/></circle>
-          <g transform="translate(390,50)"><circle r="38" fill="rgba(159,82,149,0.3)" stroke="rgba(159,82,149,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">01</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">OBSERVE</text></g>
-          <g transform="translate(550,175)"><circle r="38" fill="rgba(212,107,224,0.3)" stroke="rgba(212,107,224,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">02</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">CHOOSE</text></g>
-          <g transform="translate(480,320)"><circle r="38" fill="rgba(255,159,10,0.3)" stroke="rgba(255,159,10,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">03</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">ACT</text></g>
-          <g transform="translate(300,320)"><circle r="38" fill="rgba(255,214,10,0.3)" stroke="rgba(255,214,10,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">04</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">VERIFY</text></g>
-          <g transform="translate(230,175)"><circle r="38" fill="rgba(52,199,89,0.3)" stroke="rgba(52,199,89,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">05</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">RECORD</text></g>
-          <text x="390" y="198" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="12" font-weight="700" letter-spacing="3">CYCLE</text>
-          <text x="390" y="215" text-anchor="middle" fill="rgba(212,107,224,0.85)" font-family="Space Grotesk" font-size="9" letter-spacing="2">p &lt; 0.05</text>
-        </svg>
-        <div class="loop-prompt reveal">
-          <div class="prompt-label">The Loop Prompt</div>
-          <blockquote>Improve Anarock's sales psychology engine. After each change, measure conversion lift, stage velocity, and agent compliance. Keep only statistically significant improvements (p &lt; 0.05). Stop when 12/12 psychological vectors reach benchmark, or 3 consecutive rounds show no progress. Ask before changing live CRM configurations or agent-facing scripts.</blockquote>
-          <div class="loop-terminals">
-            <div class="terminal terminal-success"><div class="terminal-icon">SUCCESS</div><div class="terminal-label">Success</div><div class="terminal-desc">12/12 vectors at benchmark</div></div>
-            <div class="terminal terminal-blocked"><div class="terminal-icon">BLOCKED</div><div class="terminal-label">Blocked</div><div class="terminal-desc">CRM change needs approval</div></div>
-            <div class="terminal terminal-stalled"><div class="terminal-icon">STALLED</div><div class="terminal-label">Stalled</div><div class="terminal-desc">3 rounds no progress</div></div>
+    <!-- SECTION 03 · The Velocity Funnel -->
+    <section id="funnel" class="section solid">
+      <div class="section-inner">
+        <div class="section-label">03 &middot; The Velocity Funnel</div>
+        <h2 class="section-title">Psychology Applied to Every Funnel Layer</h2>
+        <p class="section-desc">Four stages. Each one compressed by the science of decision-making.</p>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Stage</th>
+                <th>Psychology Applied</th>
+                <th>CRM Action</th>
+                <th>Measured Lift</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Awareness</strong></td>
+                <td>Perception + Cognitive Fluency</td>
+                <td>Perceptual media checklist</td>
+                <td class="metric-highlight">35% recall</td>
+              </tr>
+              <tr>
+                <td><strong>Interest</strong></td>
+                <td>Motivation + Conditioning</td>
+                <td>Variable-ratio nurture</td>
+                <td class="metric-highlight">2.4x engagement</td>
+              </tr>
+              <tr>
+                <td><strong>Decision</strong></td>
+                <td>Anchoring + Situation</td>
+                <td>Premium anchor + stress sensing</td>
+                <td class="metric-highlight">&minus;28% concession</td>
+              </tr>
+              <tr>
+                <td><strong>Close</strong></td>
+                <td>Attachment + Pygmalion</td>
+                <td>Attachment-aligned cadence</td>
+                <td class="metric-highlight">+53% retention</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04 · The CRM System -->
+    <section id="crm" class="section solid-alt">
+      <div class="section-inner">
+        <div class="section-label">04 &middot; The CRM System</div>
+        <h2 class="section-title">10 Features. One Psychological Engine.</h2>
+        <p class="section-desc">Each card is a deployable CRM feature. Click to expand.</p>
+
+        <div class="bento-grid reveal-grid">
+
+          <!-- 1. Psychographic Lead Schema (large) -->
+          <div class="card bento-card bento-card-large reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6c-2 0-3 1-5 3C5 12 5 14 7 16c1 1 1 1 3 0 0-1 0-2 2-3 1 3 2 4 4 3 3-1 3-4 1-6-2-2-3-3-5-4z"/></svg>
+            </div>
+            <h3>Psychographic Lead Schema</h3>
+            <p class="bento-glance">12 psychological tags per lead. Detection via voice analysis, response latency, interaction history.</p>
+            <div class="bento-reveal">
+              <div class="bento-tag-list">
+                <span class="bento-tag">Attachment Style</span><span class="bento-tag">Motivation Tier</span><span class="bento-tag">Cultural Orientation</span><span class="bento-tag">Stress Baseline</span><span class="bento-tag">Decision Speed</span><span class="bento-tag">Risk Tolerance</span><span class="bento-tag">Self-Concept</span><span class="bento-tag">Life Stage</span><span class="bento-tag">Social Proof Sensitivity</span><span class="bento-tag">Anchoring Susceptibility</span><span class="bento-tag">Attribution Tendency</span><span class="bento-tag">Cognitive Style</span>
+              </div>
+              <div class="bento-kpi">+320% profile depth</div>
+              <p class="bento-spec">Extend lead profiles with 12 psychological vectors. Detection via voice analysis, response latency, interaction history &amp; demographic enrichment.</p>
+            </div>
+          </div>
+
+          <!-- 2. Variable-Ratio Nurture Engine -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+            </div>
+            <h3>Variable-Ratio Nurture Engine</h3>
+            <p class="bento-glance">Random WhatsApp message sequencing. 5 message types. Never on schedule.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">+67% re-engagement</div>
+              <p class="bento-spec">5 message types rotated randomly — property drops, market insights, lifestyle content, tips, CTAs. Never on a fixed schedule.</p>
+            </div>
+          </div>
+
+          <!-- 3. Primacy-Recency Tour Sequencer -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3>Primacy-Recency Tour Sequencer</h3>
+            <p class="bento-glance">Best first, second-best last. Tour order algorithm.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">+34% close rate</div>
+              <p class="bento-spec">AI tour order: highest-fit property in position 1, second-highest in final position. Middle properties exist for comparison only.</p>
+            </div>
+          </div>
+
+          <!-- 4. Cultural Router for NRI (wide) -->
+          <div class="card bento-card bento-card-wide reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9"/></svg>
+            </div>
+            <h3>Cultural Router for NRI</h3>
+            <p class="bento-glance">US &#10230; ROI data, GCC &#10230; family, SG &#10230; legacy. Geo-tagged auto-routing.</p>
+            <div class="bento-reveal">
+              <div class="cultural-routing">
+                <div class="culture-route"><div class="culture-flag">US</div><div class="culture-arrow">&#10230;</div><div class="culture-content">ROI data, independence, speed</div></div>
+                <div class="culture-route"><div class="culture-flag">GCC</div><div class="culture-arrow">&#10230;</div><div class="culture-content">family validation, community</div></div>
+                <div class="culture-route"><div class="culture-flag">SG</div><div class="culture-arrow">&#10230;</div><div class="culture-content">legacy, generational wealth</div></div>
+              </div>
+              <div class="bento-kpi">2.8x NRI conversion</div>
+            </div>
+          </div>
+
+          <!-- 5. Stress-Aware Routing -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h5l3-7 4 16 3-9h3"/></svg>
+            </div>
+            <h3>Stress-Aware Routing</h3>
+            <p class="bento-glance">Voice stress detection. High-stress leads get simplified RERA-verified options.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">38% faster close</div>
+              <p class="bento-spec">Voice stress score from calls. High-stress leads auto-routed to RERA-verified, ready-to-move inventory. Reduce choice, increase trust.</p>
+            </div>
+          </div>
+
+          <!-- 6. Pygmalion Agent Board -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l3 6-7 2 4-8z"/></svg>
+            </div>
+            <h3>Pygmalion Agent Board</h3>
+            <p class="bento-glance">Dashboard highlights potential. Premium inventory assignment.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">+22% agent performance</div>
+              <p class="bento-spec">Manager view shows growth signals — similar-deal closures, predictive assignment to premium inventory. Belief drives results.</p>
+            </div>
+          </div>
+
+          <!-- 7. Attachment Cadence Engine -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="14" height="12" rx="2"/><path d="M9 9V7c0-2 1-4 3-4s3 2 3 4v2"/><circle cx="12" cy="15" r="1.5"/></svg>
+            </div>
+            <h3>Attachment Cadence Engine</h3>
+            <p class="bento-glance">Anxious = high touch, Avoidant = low touch, Secure = direct. Auto-configured.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">47% nurture efficiency</div>
+              <p class="bento-spec">Auto-detect attachment style from interaction patterns. Auto-configure cadence and tone. Anxious = micro-reassurance. Avoidant = data-rich, low pressure. Secure = direct CTAs.</p>
+            </div>
+          </div>
+
+          <!-- 8. Life-Stage Segmenter -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </div>
+            <h3>Life-Stage Segmenter</h3>
+            <p class="bento-glance">Auto-detect from demographics. Match inventory + messaging.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">3.1x engagement</div>
+              <p class="bento-spec">Auto-detect life stage. Match inventory + messaging to the season. Update as life events are detected. 25-35: first home. 35-45: family. 45-60: investment. 60+: legacy.</p>
+            </div>
+          </div>
+
+          <!-- 9. Status Quo Breaker -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L6 14h7L10 22l9-16h-7z"/></svg>
+            </div>
+            <h3>Status Quo Breaker</h3>
+            <p class="bento-glance">Delay leads to loss framing. "Viewed 3x this week" triggers.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">41% faster recovery</div>
+              <p class="bento-spec">Detect hesitation. Trigger loss-framed messages: "Viewed 3x this week" + "Price revision in 7 days." Reframe delay as cost.</p>
+            </div>
+          </div>
+
+          <!-- 10. Social Proof Injector -->
+          <div class="card bento-card reveal">
+            <div class="specular-highlight"></div>
+            <div class="bento-icon-wrap">
+              <svg class="bento-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><circle cx="20" cy="8" r="4"/><path d="M4 20c0-4 3-6 8-6s8 2 8 6"/></svg>
+            </div>
+            <h3>Social Proof Injector</h3>
+            <p class="bento-glance">"People like you bought this." Cohort data at decision moment.</p>
+            <div class="bento-reveal">
+              <div class="bento-kpi">+33% close rate</div>
+              <p class="bento-spec">Auto-serve cohort data, testimonials, and similar-buyer stories at the right funnel moment. Trust by similarity.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05 · Matthew's Loop -->
+    <section id="loop" class="section solid">
+      <div class="section-inner">
+        <div class="section-label">05 &middot; Matthew's Loop</div>
+        <h2 class="section-title">The Improvement Engine. Always Running.</h2>
+        <p class="section-desc">A bounded feedback loop. Every cycle measures, adjusts, improves. Stops when 12/12 vectors reach benchmark.</p>
+
+        <div class="loop-vis">
+          <svg viewBox="0 0 780 400" class="loop-svg">
+            <defs>
+              <linearGradient id="loopArc"><stop offset="0%" stop-color="rgba(159,82,149,0.7)"/><stop offset="50%" stop-color="rgba(212,107,224,0.7)"/><stop offset="100%" stop-color="rgba(159,82,149,0.7)"/></linearGradient>
+            </defs>
+            <circle cx="390" cy="200" r="150" fill="none" stroke="url(#loopArc)" stroke-width="1.5" stroke-dasharray="6 4"><animateTransform attributeName="transform" type="rotate" from="0 390 200" to="360 390 200" dur="40s" repeatCount="indefinite"/></circle>
+            <g transform="translate(390,50)"><circle r="38" fill="rgba(159,82,149,0.3)" stroke="rgba(159,82,149,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">01</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">OBSERVE</text></g>
+            <g transform="translate(550,175)"><circle r="38" fill="rgba(212,107,224,0.3)" stroke="rgba(212,107,224,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">02</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">CHOOSE</text></g>
+            <g transform="translate(480,320)"><circle r="38" fill="rgba(255,159,10,0.3)" stroke="rgba(255,159,10,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">03</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">ACT</text></g>
+            <g transform="translate(300,320)"><circle r="38" fill="rgba(255,214,10,0.3)" stroke="rgba(255,214,10,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">04</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">VERIFY</text></g>
+            <g transform="translate(230,175)"><circle r="38" fill="rgba(52,199,89,0.3)" stroke="rgba(52,199,89,0.8)" stroke-width="2"/><text y="-2" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="13" font-weight="700">05</text><text y="13" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Space Grotesk" font-size="8" letter-spacing="2">RECORD</text></g>
+            <text x="390" y="198" text-anchor="middle" fill="white" font-family="Space Grotesk" font-size="12" font-weight="700" letter-spacing="3">CYCLE</text>
+            <text x="390" y="215" text-anchor="middle" fill="rgba(212,107,224,0.85)" font-family="Space Grotesk" font-size="9" letter-spacing="2">p &lt; 0.05</text>
+          </svg>
+
+          <div class="roadmap reveal-grid">
+            <div class="roadmap-phase reveal">
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-phase-label">Phase 01</div>
+              <div class="roadmap-phase-title">OBSERVE</div>
+              <div class="roadmap-phase-description">Measure 12 psychological vectors per lead. Track conversion lift, stage velocity, agent compliance.</div>
+            </div>
+            <div class="roadmap-phase reveal">
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-phase-label">Phase 02</div>
+              <div class="roadmap-phase-title">CHOOSE</div>
+              <div class="roadmap-phase-description">Select the highest-value intervention from the 10 CRM features. Data-driven, not opinion.</div>
+            </div>
+            <div class="roadmap-phase reveal">
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-phase-label">Phase 03</div>
+              <div class="roadmap-phase-title">ACT</div>
+              <div class="roadmap-phase-description">Deploy one bounded, reversible change. Update CRM config or agent script. One at a time.</div>
+            </div>
+            <div class="roadmap-phase reveal">
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-phase-label">Phase 04</div>
+              <div class="roadmap-phase-title">VERIFY</div>
+              <div class="roadmap-phase-description">Run statistical significance test (p &lt; 0.05). Keep only proven improvements. Discard noise.</div>
+            </div>
+            <div class="roadmap-phase reveal">
+              <div class="roadmap-dot"></div>
+              <div class="roadmap-phase-label">Phase 05</div>
+              <div class="roadmap-phase-title">RECORD</div>
+              <div class="roadmap-phase-description">Document action, evidence, outcome. Build the institutional playbook. Share across teams.</div>
+            </div>
+          </div>
+
+          <div class="loop-terminals grid-3">
+            <div class="terminal terminal-success reveal">
+              <div class="terminal-icon">SUCCESS</div>
+              <div class="terminal-label">Success</div>
+              <div class="terminal-desc">12/12 vectors at benchmark</div>
+            </div>
+            <div class="terminal terminal-blocked reveal">
+              <div class="terminal-icon">BLOCKED</div>
+              <div class="terminal-label">Blocked</div>
+              <div class="terminal-desc">CRM change needs approval</div>
+            </div>
+            <div class="terminal terminal-stalled reveal">
+              <div class="terminal-icon">STALLED</div>
+              <div class="terminal-label">Stalled</div>
+              <div class="terminal-desc">3 rounds no progress</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="delta" class="section solid-alt">
-    <div class="section-inner">
-      <div class="section-label">06 · The Delta</div>
-      <h2 class="section-title">Standard vs. psychology-optimized.</h2>
-      <p class="section-desc">Left: what most real estate companies do. Right: what ANAROCK does.</p>
-      <div class="delta-vis">
-        <div class="delta-col reveal">
-          <div class="delta-col-header">Standard</div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg></span><div><div class="delta-row-title">Lead Profile</div><div class="delta-row-desc">Budget + location</div></div></div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span><div><div class="delta-row-title">Nurture</div><div class="delta-row-desc">Fixed weekly email</div></div></div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/></svg></span><div><div class="delta-row-title">Tour Order</div><div class="delta-row-desc">Price-sorted</div></div></div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg></span><div><div class="delta-row-title">NRI Targeting</div><div class="delta-row-desc">One pitch, all markets</div></div></div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg></span><div><div class="delta-row-title">Agent Coaching</div><div class="delta-row-desc">Focus on failures</div></div></div>
-          <div class="delta-row"><span class="delta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="14" height="12" rx="2"/></svg></span><div><div class="delta-row-title">Trust Building</div><div class="delta-row-desc">Generic reassurances</div></div></div>
-        </div>
-        <div class="delta-arrow-wrap"><div class="delta-arrow-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7m10 0v10"/></svg></div></div>
-        <div class="delta-col optimized reveal">
-          <div class="delta-col-header optimized">ANAROCK</div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6c-2 0-3 1-5 3C5 12 5 14 7 16c1 1 1 1 3 0"/></svg></span><div><div class="delta-row-title">12 Psychological Vectors</div><div class="delta-row-desc">+320% profile depth</div></div></div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span><div><div class="delta-row-title">Variable-Ratio WhatsApp</div><div class="delta-row-desc">+67% re-engagement</div></div></div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/></svg></span><div><div class="delta-row-title">Primacy-Recency Algorithm</div><div class="delta-row-desc">+34% close</div></div></div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg></span><div><div class="delta-row-title">Cultural Orientation Router</div><div class="delta-row-desc">2.8x NRI conversion</div></div></div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg></span><div><div class="delta-row-title">Pygmalion Predictive</div><div class="delta-row-desc">+22% performance</div></div></div>
-          <div class="delta-row"><span class="delta-icon optimized"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="14" height="12" rx="2"/></svg></span><div><div class="delta-row-title">Attachment-Aligned Cadence</div><div class="delta-row-desc">+47% efficiency</div></div></div>
+    <!-- SECTION 06 · The Delta -->
+    <section id="delta" class="section solid-alt">
+      <div class="section-inner">
+        <div class="section-label">06 &middot; The Delta</div>
+        <h2 class="section-title">Standard vs. Psychology-Optimized</h2>
+        <p class="section-desc">Left: what most real estate companies do. Right: what ANAROCK does.</p>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Dimension</th>
+                <th>Standard Real Estate</th>
+                <th>ANAROCK Psychology</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lead Profile</strong></td>
+                <td>Budget + location</td>
+                <td class="highlight">12 Psychological Vectors</td>
+              </tr>
+              <tr>
+                <td><strong>Nurture</strong></td>
+                <td>Fixed weekly email</td>
+                <td class="highlight">Variable-Ratio WhatsApp</td>
+              </tr>
+              <tr>
+                <td><strong>Tour Order</strong></td>
+                <td>Price-sorted</td>
+                <td class="highlight">Primacy-Recency Algorithm</td>
+              </tr>
+              <tr>
+                <td><strong>NRI Targeting</strong></td>
+                <td>One pitch, all markets</td>
+                <td class="highlight">Cultural Orientation Router</td>
+              </tr>
+              <tr>
+                <td><strong>Agent Coaching</strong></td>
+                <td>Focus on failures</td>
+                <td class="highlight">Pygmalion Predictive Board</td>
+              </tr>
+              <tr>
+                <td><strong>Trust Building</strong></td>
+                <td>Generic reassurances</td>
+                <td class="highlight">Attachment-Aligned Cadence</td>
+              </tr>
+              <tr>
+                <td><strong>Decision Speed</strong></td>
+                <td>Average 45 days</td>
+                <td class="highlight">Average 17 days</td>
+              </tr>
+              <tr>
+                <td><strong>Close Rate</strong></td>
+                <td>Industry 2.4%</td>
+                <td class="highlight">ANAROCK 4.1%</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <img class="footer-logo" src="assets/anarock_logo_official_white.svg" alt="ANAROCK">
-      <p class="footer-text">Psychology of Sales Intelligence · A visual map of the human mind behind every real estate decision.</p>
-      <p class="footer-meta">Based on the 26-unit <em>Discovering Psychology</em> curriculum by Annenberg Learner, WGBH Boston & American Psychological Association (1990, 2001).</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-logo-container">
+        <img class="footer-logo-img" src="assets/anarock_logo_official_white.svg" alt="ANAROCK" style="width:200px;height:auto;">
+      </div>
+      <p class="footer-text">Psychology of Sales Intelligence &middot; A visual map of the human mind behind every real estate decision.</p>
+      <p class="footer-meta">Based on the <em>Discovering Psychology</em> curriculum by Annenberg Learner, WGBH Boston &amp; American Psychological Association.</p>
       <p class="footer-copy">&copy; 2026 ANAROCK Intelligence. All rights reserved. Values Over Value.</p>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
 
   <script src="js/main.js"></script>
 </body>
